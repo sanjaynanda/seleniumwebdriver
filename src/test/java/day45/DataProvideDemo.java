@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class DataProvideDemo {
@@ -22,13 +24,13 @@ public class DataProvideDemo {
 
 	}
  
-@Test
- void testLogin() throws InterruptedException
+@Test(dataProvider="dp")
+ void testLogin(String email,String pwd) throws InterruptedException
  {
 	 driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
 	 driver.manage().window().maximize();
-	 driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("frt@gmail.com");
-	 driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("test@123");
+	 driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(email);
+	 driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(pwd);
 	 driver.findElement(By.xpath("//input[@value='Login']")).click();
 	 Thread.sleep(2000);
 	 boolean status=driver.findElement(By.xpath("//h2[normalize-space()='My Account']")).isDisplayed();
@@ -47,6 +49,20 @@ public class DataProvideDemo {
 @AfterClass
  void tearDown()
  {
-	
+	driver.close();
  }
+
+@DataProvider(name="dp",indices= {0})
+Object[][] loginData()
+{
+	Object data[][]= {
+							{"abx2@gmail.com","test"},
+							{"xyz@gmail.com","test012"},
+							{"john@gmail.com","test123"},
+							{"pavano1123@gmail.com","test123"},
+							{"johncanedy@gmail.com","test"},
+			
+					};
+	return data;
+}
 }
