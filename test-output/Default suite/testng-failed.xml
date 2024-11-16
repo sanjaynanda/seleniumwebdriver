@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day45.DataProvideDemo">
+      <class name="day46.OrangeHRM">
         <methods>
-          <include name="testLogin"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="testAppUrl"/>
+          <include name="testHomePageTitle"/>
         </methods>
-      </class> <!-- day45.DataProvideDemo -->
+      </class> <!-- day46.OrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
