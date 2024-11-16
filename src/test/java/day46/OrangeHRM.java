@@ -12,7 +12,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 
-//@Listeners(day46.MyListener.class)
+//@Listeners(day46.ExtentReportManager.class)
 public class OrangeHRM {
 
 	

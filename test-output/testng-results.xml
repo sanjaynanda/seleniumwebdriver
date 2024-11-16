@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-16T22:02:53 IST" name="Suite" finished-at="2024-11-16T22:03:05 IST" duration-ms="12577">
+  <suite started-at="2024-11-16T22:15:34 IST" name="Suite" finished-at="2024-11-16T22:15:47 IST" duration-ms="13138">
     <groups>
     </groups>
-    <test started-at="2024-11-16T22:02:53 IST" name="Test" finished-at="2024-11-16T22:03:05 IST" duration-ms="12577">
+    <test started-at="2024-11-16T22:15:34 IST" name="Test" finished-at="2024-11-16T22:15:47 IST" duration-ms="13138">
       <class name="day46.OrangeHRM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:day46.OrangeHRM@4dbb42b7]" started-at="2024-11-16T22:02:53 IST" name="setup" finished-at="2024-11-16T22:03:05 IST" duration-ms="11910" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day46.OrangeHRM@66f57048]" started-at="2024-11-16T22:15:35 IST" name="setup" finished-at="2024-11-16T22:15:47 IST" duration-ms="12034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogo()[pri:1, instance:day46.OrangeHRM@4dbb42b7]" started-at="2024-11-16T22:03:05 IST" name="TestLogo" finished-at="2024-11-16T22:03:05 IST" duration-ms="72" status="PASS">
+        <test-method signature="TestLogo()[pri:1, instance:day46.OrangeHRM@66f57048]" started-at="2024-11-16T22:15:47 IST" name="TestLogo" finished-at="2024-11-16T22:15:47 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogo -->
-        <test-method signature="testAppUrl()[pri:2, instance:day46.OrangeHRM@4dbb42b7]" started-at="2024-11-16T22:03:05 IST" name="testAppUrl" finished-at="2024-11-16T22:03:05 IST" duration-ms="14" status="FAIL">
+        <test-method signature="testAppUrl()[pri:2, instance:day46.OrangeHRM@66f57048]" started-at="2024-11-16T22:15:47 IST" name="testAppUrl" finished-at="2024-11-16T22:15:47 IST" duration-ms="12" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
@@ -63,13 +63,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAppUrl -->
-        <test-method signature="testHomePageTitle()[pri:3, instance:day46.OrangeHRM@4dbb42b7]" started-at="2024-11-16T22:03:05 IST" name="testHomePageTitle" finished-at="2024-11-16T22:03:05 IST" depends-on-methods="day46.OrangeHRM.testAppUrl" duration-ms="0" status="SKIP">
+        <test-method signature="testHomePageTitle()[pri:3, instance:day46.OrangeHRM@66f57048]" started-at="2024-11-16T22:15:47 IST" name="testHomePageTitle" finished-at="2024-11-16T22:15:47 IST" depends-on-methods="day46.OrangeHRM.testAppUrl" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method OrangeHRM.testHomePageTitle()[pri:3, instance:day46.OrangeHRM@4dbb42b7] depends on not successfully finished methods]]>
+              <![CDATA[Method OrangeHRM.testHomePageTitle()[pri:3, instance:day46.OrangeHRM@66f57048] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method OrangeHRM.testHomePageTitle()[pri:3, instance:day46.OrangeHRM@4dbb42b7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method OrangeHRM.testHomePageTitle()[pri:3, instance:day46.OrangeHRM@66f57048] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -95,7 +95,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day46.OrangeHRM@4dbb42b7]" started-at="2024-11-16T22:03:05 IST" name="tearDown" finished-at="2024-11-16T22:03:05 IST" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day46.OrangeHRM@66f57048]" started-at="2024-11-16T22:15:47 IST" name="tearDown" finished-at="2024-11-16T22:15:47 IST" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
