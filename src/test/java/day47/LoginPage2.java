@@ -1,5 +1,7 @@
 package day47;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +26,9 @@ public class LoginPage2 {
 	
 	@FindBy(xpath="//button[normalize-space()='Login']")
 	WebElement btn_login;
+	
+	@FindBy(tagName="div")
+	List<WebElement> links;
 	
 	public void setUserName(String user)
 	{
