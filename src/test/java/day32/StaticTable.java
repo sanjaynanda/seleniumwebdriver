@@ -21,6 +21,44 @@ public class StaticTable {
 		
 		int cols=driver.findElements(By.xpath("//table[@name='BookTable']//th")).size();
 		System.out.println("Number of cols:"+cols);
+		
+		
+	  // String bookname=driver.findElement(By.xpath("//table[@name='BookTable']//tr[5]/td[1]")).getText();
+	   //System.out.println(bookname);
+		
+		for(int i=2;i<=rows;i++)
+		{
+			for(int j=1;j<=cols;j++)
+			{
+				String value=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td["+j+"]")).getText();
+				System.out.print(value+"\t");
+				
+			}
+			System.out.println();
+		}
+		
+		
+		for(int i=2;i<=rows;i++)
+		{
+			String value2=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[2]")).getText();
+			if(value2.equals("Mukesh"))
+			{
+				String bookname=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[1]")).getText();
+				System.out.println(bookname);
+			}
+			
+			
+		}
+		
+		int total=0;
+		for(int i=2;i<=rows;i++)
+		{
+			String value2=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[4]")).getText();
+			total=total+Integer.parseInt(value2);
+						
+		}
+		System.out.println("total price of the book: "+total);
+		
 	}
 
 }
