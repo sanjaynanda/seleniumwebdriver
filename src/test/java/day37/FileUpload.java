@@ -40,6 +40,20 @@ public class FileUpload {
 		{
 			System.out.println("Files are not uploaded or incorrect files uploaded");
 		}
+		
+		
+		// validate file names
+		if(driver.findElement(By.xpath("//ul[@id='fileList']//li[1]")).getText().equals("learn 1st Sept.txt") && 
+				driver.findElement(By.xpath("//ul[@id='fileList']//li[2]")).getText().equals("learn 2nd Sept.txt"))
+		
+		{
+			System.out.println("Files names matching");
+		}
+		else
+		{
+			System.out.println("Files are not matching");
+		}
+			
 		driver.close();
 }
 }
