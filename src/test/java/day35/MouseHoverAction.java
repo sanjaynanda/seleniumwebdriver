@@ -21,8 +21,8 @@ public class MouseHoverAction {
 		WebElement desktops=driver.findElement(By.xpath("//a[normalize-space()='Desktops']"));
 		WebElement mac=driver.findElement(By.xpath("//a[normalize-space()='Mac (1)']"));
 		Actions act=new Actions(driver);
-		//act.moveToElement(desktops).moveToElement(mac).perform();
-		act.moveToElement(desktops).perform();
+		act.moveToElement(desktops).moveToElement(mac).perform();
+		//act.moveToElement(desktops).perform();
 		//Thread.sleep(5000);
 		//act.moveToElement(mac).perform();
 		act.contextClick(mac).perform();
